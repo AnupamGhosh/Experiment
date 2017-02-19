@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-# compiled java file
-=======
+# internal files
+*.project
 # compiles java files
->>>>>>> 2d0248b58a4e8b730a1e6c710f19f1a97420382f
 *.class
+
