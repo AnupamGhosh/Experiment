@@ -1,7 +1,7 @@
 package fun;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+//import java.io.File;
+//import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -9,6 +9,7 @@ public class TicTacToe {
 	private int[][] scoreMemo;
 	private int[][] board;
 	private int[][] Dboard = {{ 1, 1, 0 }, { 0, 2, 0 }, { 0, 0, 0 }};
+	private static Scanner in;
 	
 	TicTacToe(int[][] b) {
 		scoreMemo = new int[(int) Math.pow(3, 9)][];
@@ -231,7 +232,7 @@ public class TicTacToe {
 	}
 	
 	static int playGame() {
-		Scanner in = new Scanner(System.in);
+		in = new Scanner(System.in);
 //		try {
 //			in = new Scanner(new File("src/fun/input"));
 //		} catch (FileNotFoundException e) {
@@ -267,7 +268,6 @@ public class TicTacToe {
 				return 2;
 			}
 		}
-		in.close();
 		return 0;
 	}
 	

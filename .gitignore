@@ -1,5 +1,6 @@
 # internal files
 *.project
+*.classpath
+bin/
 # compiles java files
 *.class
-
